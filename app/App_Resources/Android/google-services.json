@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "960612642914",
+    "firebase_url": "https://hackfest-7fe5b.firebaseio.com",
+    "project_id": "hackfest-7fe5b",
+    "storage_bucket": "hackfest-7fe5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960612642914:android:564fbbe91e7ee962",
+        "android_client_info": {
+          "package_name": "org.nativescript.hackfest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960612642914-bc4rohadmircl3g44hq6jiqmmg0itj9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhaiessUD0i8R2-JZ8WAOXiDq_K-BlCpM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
