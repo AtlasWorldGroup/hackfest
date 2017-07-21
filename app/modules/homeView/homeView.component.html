@@ -1,0 +1,17 @@
+<ns-action-bar [title]="title" <!--- component view navigation directive --->
+    ></ns-action-bar>
+
+<!-- additional view content -->
+<!-- START_CUSTOM_CODE_homeView -->
+<!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+<!--<ListView [items]="countries" (itemTap)="onItemTap($event)" class="list-group">
+    <ng-template let-country="item" let-i="index" let-odd="odd" let-even="even">
+        <GridLayout class="list-group-item">
+            <Label [text]="country.name"></Label>
+            <Button class="btn btn-primary btn-active" id="button" text="Enable" (tap)="onTap($event)"></Button>
+        </GridLayout>
+    </ng-template>
+</ListView>-->
+<Label class="h3  p15" text="ID is:" textWrap="true"></Label>
+<Label class="h3  p15" [text]="id" textWrap="true"></Label>
+<!-- END_CUSTOM_CODE_homeView -->

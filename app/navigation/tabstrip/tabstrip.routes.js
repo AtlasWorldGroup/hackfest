@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = require("@angular/router");
+var tabstrip_component_1 = require("./tabstrip.component");
+var common = require("../shared");
+var tabMenuRoutes = [
+    {
+        path: "nav",
+        component: tabstrip_component_1.TabMenuComponent,
+        children: common.ROUTES.slice()
+    }
+];
+exports.tabMenuRouting = router_1.RouterModule.forChild(tabMenuRoutes);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGFic3RyaXAucm91dGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsidGFic3RyaXAucm91dGVzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsMENBQXVEO0FBRXZELDJEQUF3RDtBQUV4RCxrQ0FBb0M7QUFHcEMsSUFBTSxhQUFhLEdBQVc7SUFDNUI7UUFDRSxJQUFJLEVBQUUsS0FBSztRQUNYLFNBQVMsRUFBRSxxQ0FBZ0I7UUFDM0IsUUFBUSxFQUFNLE1BQU0sQ0FBQyxNQUFNLFFBQUM7S0FDN0I7Q0FDRixDQUFDO0FBRVcsUUFBQSxjQUFjLEdBQXdCLHFCQUFZLENBQUMsUUFBUSxDQUFDLGFBQWEsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTW9kdWxlV2l0aFByb3ZpZGVycyB9ICBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xyXG5pbXBvcnQgeyBSb3V0ZXMsIFJvdXRlck1vZHVsZSB9IGZyb20gXCJAYW5ndWxhci9yb3V0ZXJcIjtcclxuXHJcbmltcG9ydCB7IFRhYk1lbnVDb21wb25lbnQgfSBmcm9tIFwiLi90YWJzdHJpcC5jb21wb25lbnRcIjtcclxuXHJcbmltcG9ydCAqIGFzIGNvbW1vbiBmcm9tIFwiLi4vc2hhcmVkXCI7XHJcbmltcG9ydCAqIGFzIHNoYXJlZCBmcm9tIFwiLi4vLi4vc2hhcmVkXCI7XHJcblxyXG5jb25zdCB0YWJNZW51Um91dGVzOiBSb3V0ZXMgPSBbXHJcbiAge1xyXG4gICAgcGF0aDogXCJuYXZcIixcclxuICAgIGNvbXBvbmVudDogVGFiTWVudUNvbXBvbmVudCxcclxuICAgIGNoaWxkcmVuOiBbLi4uY29tbW9uLlJPVVRFU11cclxuICB9XHJcbl07XHJcblxyXG5leHBvcnQgY29uc3QgdGFiTWVudVJvdXRpbmc6IE1vZHVsZVdpdGhQcm92aWRlcnMgPSBSb3V0ZXJNb2R1bGUuZm9yQ2hpbGQodGFiTWVudVJvdXRlcyk7XHJcbiJdfQ==

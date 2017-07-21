@@ -1,35 +1,31 @@
-import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { AppRoutingModule } from "./app.routing";
-import { AppComponent } from "./app.component";
+import {NgModule}from "@angular/core";
+import {NativeScriptHttpModule} from "nativescript-angular/http"
 
-import { PushComponent } from "./push/push.component";
+import {NativeScriptModule}from "nativescript-angular/nativescript.module";
+import {NativeScriptRouterModule}from "nativescript-angular/router";
+/// additional imports
 
-// Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import {appRoutes}from "./app.routes";
+import {AppComponent}from "./app.component";
 
-// Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
-// import { NativeScriptHttpModule } from "nativescript-angular/http";
+/// additional required modules
+
+import {TabstripMenuModule as NavigationModule}from "./navigation/tabstrip/tabstrip.module";
 
 @NgModule({
-    bootstrap: [
-        AppComponent
-    ],
     imports: [
+        NativeScriptHttpModule,
         NativeScriptModule,
-        AppRoutingModule
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forRoot(appRoutes),
+        NavigationModule
     ],
     declarations: [
-        AppComponent,
-        PushComponent
+        AppComponent
     ],
-    providers: [
-    ],
-    schemas: [
-        NO_ERRORS_SCHEMA
+    bootstrap: [
+        AppComponent
     ]
 })
-/*
-Pass your application module to the bootstrapModule function located in main.ts to start your app
-*/
-export class AppModule { }
+export class AppModule {
+}

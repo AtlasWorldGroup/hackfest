@@ -1,0 +1,31 @@
+<ns-action-bar [title]="title"></ns-action-bar>
+
+<StackLayout verticalAlign="center" height="100" *ngIf="!isLoaded">
+    <Progress [value]="progressValue" maxValue="100" class="m-20"></Progress>
+</StackLayout>
+
+<ScrollView *ngIf="!isRegistered && isLoaded">
+    <StackLayout class="form">
+        <GridLayout class="input-field" columns="*, *">
+            <Label class="h3 text-muted" text="Name"></Label>
+            <TextField #name class="input" col="1" hint="Enter a name"></TextField>
+        </GridLayout><!--- pushViewModel additional fields -->
+        <GridLayout columns="*, *">
+
+            <Button class="btn btn-primary" text="Confirm" (tap)="onConfirm(name.text)"></Button>
+
+            <Button class="btn btn-outline" col="1" text="Cancel" (tap)="onCancel()"></Button>
+
+        </GridLayout>
+        <GridLayout  columns="*, *">
+        <Label class="h3  p15" [text]="'Your ID is: ' + id" textWrap="true"></Label>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>
+
+<Label *ngIf="isRegistered && isLoaded" class="h3 text-muted" [text]="'Push notifications are already enabled for you'"></Label>
+
+<!-- additional view content -->
+
+<!-- START_CUSTOM_CODE_pushView -->
+<!-- END_CUSTOM_CODE_pushView -->
