@@ -1,0 +1,55 @@
+{
+  "type": "nativescript-angular",
+  "views": [
+    {
+      "type": "nativescript-angular:view",
+      "name": "homeView",
+      "components": [],
+      "title": "Home View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "nativescript-angular:view",
+      "name": "pushView",
+      "components": [
+        {
+          "type": "nativescript-angular:form",
+          "components": [
+            {
+              "type": "nativescript-angular:editableListForm",
+              "components": [
+                {
+                  "type": "nativescript-angular:editableListFormField",
+                  "name": "name",
+                  "dataBindingRelationChildren": "[]",
+                  "title": "Name",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "text",
+                  "placeholder": "Enter a name"
+                }
+              ],
+              "name": "editableListForm8",
+              "formType": "add"
+            }
+          ],
+          "name": "pushViewModel",
+          "enableDataBinding": false,
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Enable Push",
+      "addToNavigation": true,
+      "icon": "download"
+    }
+  ],
+  "transition": "none",
+  "dataProviders": [],
+  "name": "nativeScriptApp",
+  "navigation": "tabstrip",
+  "view": "homeView",
+  "showMoreTab": false,
+  "skin": "core.light"
+}

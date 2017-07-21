@@ -1,0 +1,14 @@
+Project "platform-hackfest.tmp.proj" (default targets):
+	android Build Tooling revision 2017.06.21.4r
+	Build Tooling Hostname 422529020f66
+	Warning: Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+	Warning: Skip com.google.android.gms.internal.zzt
+	 java.lang.NullPointerException
+	Warning: Skip com.google.android.gms.internal.zzw
+	 java.lang.NullPointerException
+	Warning: Skip com.google.android.gms.internal.zzy
+	 java.lang.NullPointerException
+	Warning: Skip com.google.android.gms.internal.zzz
+	 java.lang.NullPointerException
+Done building project "platform-hackfest.tmp.proj".

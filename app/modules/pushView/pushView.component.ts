@@ -1,9 +1,9 @@
-import {Component , ViewChild, OnInit, ChangeDetectorRef}from "@angular/core";
+import {Component, ViewChild, OnInit, ChangeDetectorRef}from "@angular/core";
 
 import {Observable}from "rxjs/Observable";
 const dialogs = require("ui/dialogs");
 import {TextField} from "ui/text-field";
-import { Progress } from "ui/progress";
+import {Progress} from "ui/progress";
 import * as PushNotifications from "nativescript-push-notifications";
 import * as common from "./shared";
 import * as shared from "../../shared";
@@ -91,7 +91,10 @@ export class PushViewComponent
                     this.isLoaded = true;
                     this.cdRef.detectChanges();
                 },
-                (err) => { console.log(err); },
+                (err) => {
+                    this.isLoaded = true;
+                    this.cdRef.detectChanges();
+                },
             );
             PushNotifications.onMessageReceived(settings.notificationCallbackAndroid);
         }, error => {

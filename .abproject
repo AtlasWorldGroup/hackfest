@@ -1,0 +1,28 @@
+{
+  "ProjectName": "platform-hackfest",
+  "ProjectGuid": "1cb3d24f-278c-43e3-a22e-e8f1f47ddb1e",
+  "projectVersion": 1,
+  "AppIdentifier": "org.nativescript.hackfest",
+  "DisplayName": "platform-hackfest",
+  "Author": "",
+  "Description": "platform-hackfest",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "FrameworkVersion": "2.5.0",
+  "Framework": "NativeScript"
+}
